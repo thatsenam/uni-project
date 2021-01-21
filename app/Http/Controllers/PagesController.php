@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Collection;
 
 class PagesController extends Controller
 {
@@ -13,6 +17,28 @@ class PagesController extends Controller
 
         return view('pages.dashboard', compact('page_title', 'page_description'));
     }
+
+    public function test(Request $request)
+    {
+        $page_title = 'Dashboard';
+        $page_description = 'Some description for the page';
+
+
+        $records = [2, 3, 4, 56, 6, 7, 8, 8, 8, 8];
+        $records = $this->paginate($records, 2, null, ['path' => $request->url(), 'query' => $request->query()]);
+
+        return view('pages.test', compact('page_title', 'page_description', 'records'));
+    }
+
+    public function paginate($items, $perPage = 15, $page = null, $options = [])
+    {
+        $page = $page ?: (Paginator::resolveCurrentPage() ?: 1);
+
+        $items = $items instanceof Collection ? $items : Collection::make($items);
+
+        return new LengthAwarePaginator($items->forPage($page, $perPage), $items->count(), $perPage, $page, $options);
+    }
+
 
     /**
      * Demo methods below

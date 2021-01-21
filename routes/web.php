@@ -20,6 +20,7 @@ Route::get('/', 'PagesController@index');
 Route::get('/datatables', 'PagesController@datatables');
 Route::get('/ktdatatables', 'PagesController@ktDatatables');
 Route::get('/select2', 'PagesController@select2');
+Route::get('/test', 'PagesController@test');
 Route::get('/jquerymask', 'PagesController@jQueryMask');
 Route::get('/icons/custom-icons', 'PagesController@customIcons');
 Route::get('/icons/flaticon', 'PagesController@flaticon');
