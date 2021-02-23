@@ -32,6 +32,9 @@ License: You must have a valid license purchased only from themeforest(the above
         @foreach(config('layout.resources.css') as $style)
             <link href="{{ config('layout.self.rtl') ? asset(Metronic::rtlCssPath($style)) : asset($style) }}" rel="stylesheet" type="text/css"/>
         @endforeach
+        <link href="{{ asset('plugins/custom/datatables/datatables.bundle.css') }}" rel="stylesheet" type="text/css"/>
+
+{{--                <link href="https://preview.keenthemes.com/metronic/theme/html/demo1/dist/assets/plugins/custom/datatables/datatables.bundle.css?v=7.2.2" rel="stylesheet" type="text/css" />--}}
 
         {{-- Layout Themes (used by all pages) --}}
         @foreach (Metronic::initThemes() as $theme)
@@ -61,6 +64,7 @@ License: You must have a valid license purchased only from themeforest(the above
         @foreach(config('layout.resources.js') as $script)
             <script src="{{ asset($script) }}" type="text/javascript"></script>
         @endforeach
+        <script src="{{ asset('plugins/custom/datatables/datatables.bundle.js') }}"></script>
 
         {{-- Includable JS --}}
         @yield('scripts')
