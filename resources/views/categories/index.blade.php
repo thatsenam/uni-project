@@ -1,4 +1,4 @@
-@extends('[% layout_name %]')
+@extends('layout.default')
 
 @section('content')
 
@@ -18,20 +18,20 @@
 
         <div class="card-header">
 
-            <h5  class="my-1 float-left">[% model_plural %]</h5>
+            <h5  class="my-1 float-left">Categories</h5>
 
             <div class="btn-group btn-group-sm float-right" role="group">
-                <a href="{{ route('[% create_route_name %]') }}" class="btn btn-success" title="[% create_model %]">
+                <a href="{{ route('categories.category.create') }}" class="btn btn-success" title="Create New Category">
                     <i class="fas fa-fw fa-plus" aria-hidden="true"></i>
-                    [% create_model %]
+                    Create New Category
                 </a>
             </div>
 
         </div>
 
-        @if(count($[% model_name_plural_variable %]) == 0)
+        @if(count($categories) == 0)
             <div class="card-body text-center">
-                <h4>[% no_models_available %]</h4>
+                <h4>No Categories Available.</h4>
             </div>
         @else
         <div class="card-body">
@@ -40,29 +40,31 @@
                 <table class="table table-striped table-sm">
                     <thead>
                         <tr>
-    [% header_cells %]
+                                <th>Name</th>
+
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
-                    @foreach($[% model_name_plural_variable %] as $[% model_name_singular_variable %])
+                    @foreach($categories as $category)
                         <tr>
-    [% body_cells %]
+                                <td>{{ $category->name }}</td>
+
                             <td>
 
-                                <form method="POST" action="{!! route('[% destroy_route_name %]', $[% model_name_singular_variable %]->[% primary_key %]) !!}" accept-charset="UTF-8">
+                                <form method="POST" action="{!! route('categories.category.destroy', $category->id) !!}" accept-charset="UTF-8">
                                 <input name="_method" value="DELETE" type="hidden">
                                 {{ csrf_field() }}
 
                                     <div class="btn-group btn-group-sm float-right " role="group">
-                                        <a href="{{ route('[% show_route_name %]', $[% model_name_singular_variable %]->[% primary_key %] ) }}" class="btn btn-icon btn-light-info " title="[% show_model %]">
+                                        <a href="{{ route('categories.category.show', $category->id ) }}" class="btn btn-icon btn-light-info " title="Show Category">
                                             <i class=" fa fa-eye" aria-hidden="true"></i>
                                         </a>
-                                        <a href="{{ route('[% edit_route_name %]', $[% model_name_singular_variable %]->[% primary_key %] ) }}" class="btn btn-icon btn-light-primary mx-2" title="[% edit_model %]">
+                                        <a href="{{ route('categories.category.edit', $category->id ) }}" class="btn btn-icon btn-light-primary mx-2" title="Edit Category">
                                             <i class="fas fa-edit" aria-hidden="true"></i>
                                         </a>
 
-                                        <button type="submit" class="btn btn-icon btn-light-danger" title="[% delete_model %]" onclick="return confirm(&quot;[% confirm_delete %]&quot;)">
+                                        <button type="submit" class="btn btn-icon btn-light-danger" title="Delete Category" onclick="return confirm(&quot;Click Ok to delete Category.&quot;)">
                                             <i class=" fas  fa-trash-alt" aria-hidden="true"></i>
                                         </button>
                                     </div>
@@ -79,7 +81,7 @@
         </div>
 
         <div class="card-footer">
-            {!! $[% model_name_plural_variable %]->render() !!}
+            {!! $categories->render() !!}
         </div>
 
         @endif

@@ -23,190 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82c81cce-17ed-40ae-a1dc-77a342b83a3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-controller-base-class.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-controller-call-destroy-api-resource.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-controller-call-destroy-success-method.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-controller-call-index-api-resource.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-controller-call-index-success-method.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-controller-call-show-api-resource.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-controller-call-show-success-method.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-controller-call-store-api-resource.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-controller-call-store-success-method.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-controller-call-update-api-resource.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-controller-call-update-success-method.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-controller-error-response-method.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-controller-get-validator.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-controller-success-response-method.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-controller-transform-method.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-controller-validate.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-controller.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-documentation-controller-version-based.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-documentation-controller.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-documentation-field-validation-required.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-documentation-index-authentication.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-documentation-index-failed-authentication.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-documentation-index-failed-to-retrieve.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-documentation-index-failed-validation.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-documentation-index-fields-list-body-row-for-model.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-documentation-index-fields-list-body-row.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-documentation-index-fields-list.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-documentation-index-request.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-documentation-index-retrieved-fields-body-row.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-documentation-index-retrieved-fields.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-documentation-index-retrieved.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-documentation-index.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-documentation-routes.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-documentation-version-based-base-controller.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-resource-collection.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-resource.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/api-routes.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/controller-affirm-method.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/controller-constructor.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/controller-getdata-method-5.5.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/controller-getdata-method.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/controller-upload-method-5.3.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/controller-upload-method.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/controller.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/create.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/edit.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/form-file-field.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/form-helper-field.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/form-input-field.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/form-input-wrapper.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/form-label-field.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/form-month-field.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/form-nolabel-field.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/form-password-field.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/form-pickitems-field.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/form-pickitems-inline-field.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/form-request.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/form-selectmenu-field.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/form-selectrange-field.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/form-textarea-field.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/form.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/index.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/index.body.cell.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/index.header.cell.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/language.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/layout-with-validation.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/layout.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/login-partial.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/migration-schema-down.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/migration-schema-up.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/migration.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/model-accessor-datetime.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/model-accessor-multiple-answers.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/model-accessor.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/model-mutator-datetime.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/model-mutator-multiple-answers.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/model-mutator.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/model-primary-key.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/model-relation.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/model-timestamps.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/model.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/routes-group.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/routes.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/show.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/show.row.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective/view-model.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-controller-base-class.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-controller-call-destroy-api-resource.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-controller-call-destroy-success-method.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-controller-call-index-api-resource.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-controller-call-index-success-method.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-controller-call-show-api-resource.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-controller-call-show-success-method.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-controller-call-store-api-resource.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-controller-call-store-success-method.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-controller-call-update-api-resource.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-controller-call-update-success-method.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-controller-error-response-method.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-controller-get-validator.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-controller-success-response-method.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-controller-transform-method.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-controller-validate.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-controller.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-documentation-controller-version-based.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-documentation-controller.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-documentation-field-validation-required.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-documentation-index-authentication.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-documentation-index-failed-authentication.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-documentation-index-failed-to-retrieve.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-documentation-index-failed-validation.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-documentation-index-fields-list-body-row-for-model.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-documentation-index-fields-list-body-row.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-documentation-index-fields-list.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-documentation-index-request.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-documentation-index-retrieved-fields-body-row.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-documentation-index-retrieved-fields.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-documentation-index-retrieved.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-documentation-index.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-documentation-routes.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-documentation-version-based-base-controller.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-resource-collection.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-resource.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/api-routes.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/controller-affirm-method.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/controller-constructor.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/controller-getdata-method-5.5.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/controller-getdata-method.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/controller-upload-method-5.3.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/controller-upload-method.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/controller.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/create.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/edit.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-file-field.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-helper-field.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-input-field.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-input-wrapper.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-label-field.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-month-field.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-nolabel-field.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-password-field.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-pickitems-field.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-pickitems-inline-field.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-request.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-selectmenu-field.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-selectrange-field.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-textarea-field.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/index.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/index.body.cell.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/index.header.cell.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/language.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/layout-with-validation.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/layout.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/login-partial.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/migration-schema-down.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/migration-schema-up.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/migration.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/model-accessor-datetime.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/model-accessor-multiple-answers.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/model-accessor.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/model-mutator-datetime.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/model-mutator-multiple-answers.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/model-mutator.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/model-primary-key.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/model-relation.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/model-timestamps.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/model.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/routes-group.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/routes.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/show.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/show.row.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/view-model.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/metronic_starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/metronic_starter.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/custom/datatables/datatables.bundle.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/custom/datatables/datatables.bundle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/base/_content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/base/_content.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/base/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/base/_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/base/_layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/base/_layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/default.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/default.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laravel-code-generator/sources/resources_map.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/laravel-code-generator/sources/resources_map.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laravel-code-generator/system/migration_tracker.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/laravel-code-generator/system/migration_tracker.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-file-field.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-file-field.blade.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-input-field.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-input-field.blade.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-input-wrapper.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-input-wrapper.blade.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-label-field.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-label-field.blade.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/index.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/index.blade.stub" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -383,7 +207,8 @@
       <workItem from="1610810689387" duration="803000" />
       <workItem from="1610863173413" duration="881000" />
       <workItem from="1611219642673" duration="330000" />
-      <workItem from="1614097175972" duration="7935000" />
+      <workItem from="1614097175972" duration="8149000" />
+      <workItem from="1614233958302" duration="5508000" />
     </task>
     <servers />
   </component>

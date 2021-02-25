@@ -1,8 +1,8 @@
 
 <div class="form-group">
-[% field_label %]
     <div class="col-md-10">
-[% field_input %]
-[% field_validation_helper %]
+    [% field_label %]
+    [% field_input %]
+    [% field_validation_helper %]
     </div>
 </div>

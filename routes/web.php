@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AssetCategoriesController;
+use App\Http\Controllers\CategoriesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -47,5 +48,19 @@ Route::group([
     Route::post('/', [AssetCategoriesController::class,'store'])->name('asset_categories.asset_category.store');
     Route::put('asset_category/{assetCategory}', [AssetCategoriesController::class,'update'])->name('asset_categories.asset_category.update')->where('id', '[0-9]+');
     Route::delete('/asset_category/{assetCategory}',[AssetCategoriesController::class,'destroy'])->name('asset_categories.asset_category.destroy')->where('id', '[0-9]+');
+
+});
+
+Route::group([
+    'prefix' => 'categories',
+], function () {
+
+    Route::get('/', [CategoriesController::class,'index'])->name('categories.category.index');
+    Route::get('/create',[CategoriesController::class,'create'])->name('categories.category.create');
+    Route::get('/show/{category}',[CategoriesController::class,'show'])->name('categories.category.show')->where('id', '[0-9]+');
+    Route::get('/{category}/edit',[CategoriesController::class,'edit'])->name('categories.category.edit')->where('id', '[0-9]+');
+    Route::post('/', [CategoriesController::class,'store'])->name('categories.category.store');
+    Route::put('category/{category}', [CategoriesController::class,'update'])->name('categories.category.update')->where('id', '[0-9]+');
+    Route::delete('/category/{category}',[CategoriesController::class,'destroy'])->name('categories.category.destroy')->where('id', '[0-9]+');
 
 });
