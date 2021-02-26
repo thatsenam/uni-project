@@ -6,9 +6,18 @@
 
     {{-- Dashboard 1 --}}
 
-        <div class="col-12 bg-primary">
-            Hello World
+    <div class="row ">
+        <div class="col">
+            <div class="card">
+                <a class="card-body" href="{{ route('categories.category.index') }}">Categories</a>
+            </div>
         </div>
+        <div class="col">
+            <div class="card">
+                <a class="card-body" href="{{ route('asset_categories.asset_category.index') }}">Asset Categories</a>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -28,7 +37,7 @@
     <script>
         var avatar5 = new KTImageInput('kt_image_5');
 
-        avatar5.on('cancel', function(imageInput) {
+        avatar5.on('cancel', function (imageInput) {
             swal.fire({
                 title: 'Image successfully changed !',
                 type: 'success',
@@ -38,7 +47,7 @@
             });
         });
 
-        avatar5.on('change', function(imageInput) {
+        avatar5.on('change', function (imageInput) {
             // swal.fire({
             //     title: 'Image successfully changed !',
             //     type: 'success',
@@ -48,7 +57,7 @@
             // });
         });
 
-        avatar5.on('remove', function(imageInput) {
+        avatar5.on('remove', function (imageInput) {
             // swal.fire({
             //     title: 'Image successfully removed !',
             //     type: 'error',

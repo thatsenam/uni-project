@@ -24,14 +24,9 @@
   <component name="ChangeListManager">
     <list default="true" id="82c81cce-17ed-40ae-a1dc-77a342b83a3c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laravel-code-generator/sources/resources_map.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/laravel-code-generator/sources/resources_map.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laravel-code-generator/system/migration_tracker.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/laravel-code-generator/system/migration_tracker.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-file-field.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-file-field.blade.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-input-field.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-input-field.blade.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-input-wrapper.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-input-wrapper.blade.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-label-field.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/form-label-field.blade.stub" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/index.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/resources/laravel-code-generator/templates/default/index.blade.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/categories/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/dashboard.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +203,9 @@
       <workItem from="1610863173413" duration="881000" />
       <workItem from="1611219642673" duration="330000" />
       <workItem from="1614097175972" duration="8149000" />
-      <workItem from="1614233958302" duration="5508000" />
+      <workItem from="1614233958302" duration="5809000" />
+      <workItem from="1614258284463" duration="187000" />
+      <workItem from="1614358002510" duration="1498000" />
     </task>
     <servers />
   </component>

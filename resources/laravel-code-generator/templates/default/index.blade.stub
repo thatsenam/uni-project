@@ -55,15 +55,15 @@
                                 {{ csrf_field() }}
 
                                     <div class="btn-group btn-group-sm float-right " role="group">
-                                        <a href="{{ route('[% show_route_name %]', $[% model_name_singular_variable %]->[% primary_key %] ) }}" class="btn btn-icon btn-light-info " title="[% show_model %]">
-                                            <i class=" fa fa-eye" aria-hidden="true"></i>
+                                        <a href="{{ route('[% show_route_name %]', $[% model_name_singular_variable %]->[% primary_key %] ) }}"title="[% show_model %]">
+                                            <i class="fa fa-eye text-info" aria-hidden="true"></i>
                                         </a>
-                                        <a href="{{ route('[% edit_route_name %]', $[% model_name_singular_variable %]->[% primary_key %] ) }}" class="btn btn-icon btn-light-primary mx-2" title="[% edit_model %]">
-                                            <i class="fas fa-edit" aria-hidden="true"></i>
+                                        <a href="{{ route('[% edit_route_name %]', $[% model_name_singular_variable %]->[% primary_key %] ) }}" class="mx-4" title="[% edit_model %]">
+                                            <i class="fas fa-edit text-primary" aria-hidden="true"></i>
                                         </a>
 
-                                        <button type="submit" class="btn btn-icon btn-light-danger" title="[% delete_model %]" onclick="return confirm(&quot;[% confirm_delete %]&quot;)">
-                                            <i class=" fas  fa-trash-alt" aria-hidden="true"></i>
+                                        <button type="submit" style="border: none;background: transparent"  title="[% delete_model %]" onclick="return confirm(&quot;[% confirm_delete %]&quot;)">
+                                            <i class=" fas  fa-trash text-danger" aria-hidden="true"></i>
                                         </button>
                                     </div>
 
@@ -89,15 +89,27 @@
 
 @section('scripts')
 
-    <script>
-        $(document).ready(function () {
-            $('table').DataTable( {
-                responsive: true,
-               "order": []
+     <script>
+         $(document).ready(function () {
+             $('table').DataTable({
+                 responsive: true,
+                 "order": [],
+                 dom: 'lBfrtip',
+                 buttons: [
+                     'copy', 'excel', 'pdf', 'print'
+                 ]
 
-            } );
-        });
-    </script>
+             });
+         });
+     </script>
+
+     <style>
+         .dataTables_filter {
+             float: right;
+         }
+        i:hover { color: #0248fa !important; }
+
+     </style>
 
 
 @endsection
