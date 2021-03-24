@@ -17,6 +17,8 @@ class CategoriesController extends Controller
      */
     public function index()
     {
+        flash('Sorry! Please try again.')->error();
+
         $categories = Category::paginate(25);
 
         return view('categories.index', compact('categories'));
