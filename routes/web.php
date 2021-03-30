@@ -4,6 +4,7 @@ use App\Http\Controllers\AssetCategoriesController;
 use App\Http\Controllers\BuySmsController;
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\IVAsController;
+use App\Http\Controllers\PersonController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\SmsContactsController;
 use App\Http\Controllers\SMSModelsController;
@@ -118,13 +119,13 @@ Route::group([
     'prefix' => 's_m_s_models',
 ], function () {
 
-    Route::get('/', [SMSModelsController::class,'index'])->name('s_m_s_models.s_m_s_model.index');
-    Route::get('/create',[SMSModelsController::class,'create'])->name('s_m_s_models.s_m_s_model.create');
-    Route::get('/show/{sMSModel}',[SMSModelsController::class,'show'])->name('s_m_s_models.s_m_s_model.show')->where('id', '[0-9]+');
-    Route::get('/{sMSModel}/edit',[SMSModelsController::class,'edit'])->name('s_m_s_models.s_m_s_model.edit')->where('id', '[0-9]+');
-    Route::post('/', [SMSModelsController::class,'store'])->name('s_m_s_models.s_m_s_model.store');
-    Route::put('s_m_s_model/{sMSModel}', [SMSModelsController::class,'update'])->name('s_m_s_models.s_m_s_model.update')->where('id', '[0-9]+');
-    Route::delete('/s_m_s_model/{sMSModel}',[SMSModelsController::class,'destroy'])->name('s_m_s_models.s_m_s_model.destroy')->where('id', '[0-9]+');
+    Route::get('/', [SMSModelsController::class, 'index'])->name('s_m_s_models.s_m_s_model.index');
+    Route::get('/create', [SMSModelsController::class, 'create'])->name('s_m_s_models.s_m_s_model.create');
+    Route::get('/show/{sMSModel}', [SMSModelsController::class, 'show'])->name('s_m_s_models.s_m_s_model.show')->where('id', '[0-9]+');
+    Route::get('/{sMSModel}/edit', [SMSModelsController::class, 'edit'])->name('s_m_s_models.s_m_s_model.edit')->where('id', '[0-9]+');
+    Route::post('/', [SMSModelsController::class, 'store'])->name('s_m_s_models.s_m_s_model.store');
+    Route::put('s_m_s_model/{sMSModel}', [SMSModelsController::class, 'update'])->name('s_m_s_models.s_m_s_model.update')->where('id', '[0-9]+');
+    Route::delete('/s_m_s_model/{sMSModel}', [SMSModelsController::class, 'destroy'])->name('s_m_s_models.s_m_s_model.destroy')->where('id', '[0-9]+');
 
 });
 
@@ -132,29 +133,28 @@ Route::group([
     'prefix' => 'buy_sms',
 ], function () {
 
-    Route::get('/', [BuySmsController::class,'index'])->name('buy_sms.buy_sms.index');
-    Route::get('/create',[BuySmsController::class,'create'])->name('buy_sms.buy_sms.create');
-    Route::get('/show/{buySms}',[BuySmsController::class,'show'])->name('buy_sms.buy_sms.show')->where('id', '[0-9]+');
-    Route::get('/{buySms}/edit',[BuySmsController::class,'edit'])->name('buy_sms.buy_sms.edit')->where('id', '[0-9]+');
-    Route::post('/', [BuySmsController::class,'store'])->name('buy_sms.buy_sms.store');
-    Route::put('buy_sms/{buySms}', [BuySmsController::class,'update'])->name('buy_sms.buy_sms.update')->where('id', '[0-9]+');
-    Route::delete('/buy_sms/{buySms}',[BuySmsController::class,'destroy'])->name('buy_sms.buy_sms.destroy')->where('id', '[0-9]+');
+    Route::get('/', [BuySmsController::class, 'index'])->name('buy_sms.buy_sms.index');
+    Route::get('/create', [BuySmsController::class, 'create'])->name('buy_sms.buy_sms.create');
+    Route::get('/show/{buySms}', [BuySmsController::class, 'show'])->name('buy_sms.buy_sms.show')->where('id', '[0-9]+');
+    Route::get('/{buySms}/edit', [BuySmsController::class, 'edit'])->name('buy_sms.buy_sms.edit')->where('id', '[0-9]+');
+    Route::post('/', [BuySmsController::class, 'store'])->name('buy_sms.buy_sms.store');
+    Route::put('buy_sms/{buySms}', [BuySmsController::class, 'update'])->name('buy_sms.buy_sms.update')->where('id', '[0-9]+');
+    Route::delete('/buy_sms/{buySms}', [BuySmsController::class, 'destroy'])->name('buy_sms.buy_sms.destroy')->where('id', '[0-9]+');
 
 });
-
 
 
 Route::group([
     'prefix' => 'students',
 ], function () {
 
-    Route::get('/', [StudentsController::class,'index'])->name('students.student.index');
-    Route::get('/create',[StudentsController::class,'create'])->name('students.student.create');
-    Route::get('/show/{student}',[StudentsController::class,'show'])->name('students.student.show')->where('id', '[0-9]+');
-    Route::get('/{student}/edit',[StudentsController::class,'edit'])->name('students.student.edit')->where('id', '[0-9]+');
-    Route::post('/', [StudentsController::class,'store'])->name('students.student.store');
-    Route::put('student/{student}', [StudentsController::class,'update'])->name('students.student.update')->where('id', '[0-9]+');
-    Route::delete('/student/{student}',[StudentsController::class,'destroy'])->name('students.student.destroy')->where('id', '[0-9]+');
+    Route::get('/', [StudentsController::class, 'index'])->name('students.student.index');
+    Route::get('/create', [StudentsController::class, 'create'])->name('students.student.create');
+    Route::get('/show/{student}', [StudentsController::class, 'show'])->name('students.student.show')->where('id', '[0-9]+');
+    Route::get('/{student}/edit', [StudentsController::class, 'edit'])->name('students.student.edit')->where('id', '[0-9]+');
+    Route::post('/', [StudentsController::class, 'store'])->name('students.student.store');
+    Route::put('student/{student}', [StudentsController::class, 'update'])->name('students.student.update')->where('id', '[0-9]+');
+    Route::delete('/student/{student}', [StudentsController::class, 'destroy'])->name('students.student.destroy')->where('id', '[0-9]+');
 
 });
 
@@ -162,12 +162,22 @@ Route::group([
     'prefix' => 'i_v_as',
 ], function () {
 
-    Route::get('/', [IVAsController::class,'index'])->name('i_v_as.i_v_a.index');
-    Route::get('/create',[IVAsController::class,'create'])->name('i_v_as.i_v_a.create');
-    Route::get('/show/{iVA}',[IVAsController::class,'show'])->name('i_v_as.i_v_a.show')->where('id', '[0-9]+');
-    Route::get('/{iVA}/edit',[IVAsController::class,'edit'])->name('i_v_as.i_v_a.edit')->where('id', '[0-9]+');
-    Route::post('/', [IVAsController::class,'store'])->name('i_v_as.i_v_a.store');
-    Route::put('i_v_a/{iVA}', [IVAsController::class,'update'])->name('i_v_as.i_v_a.update')->where('id', '[0-9]+');
-    Route::delete('/i_v_a/{iVA}',[IVAsController::class,'destroy'])->name('i_v_as.i_v_a.destroy')->where('id', '[0-9]+');
+    Route::get('/', [IVAsController::class, 'index'])->name('i_v_as.i_v_a.index');
+    Route::get('/create', [IVAsController::class, 'create'])->name('i_v_as.i_v_a.create');
+    Route::get('/show/{iVA}', [IVAsController::class, 'show'])->name('i_v_as.i_v_a.show')->where('id', '[0-9]+');
+    Route::get('/{iVA}/edit', [IVAsController::class, 'edit'])->name('i_v_as.i_v_a.edit')->where('id', '[0-9]+');
+    Route::post('/', [IVAsController::class, 'store'])->name('i_v_as.i_v_a.store');
+    Route::put('i_v_a/{iVA}', [IVAsController::class, 'update'])->name('i_v_as.i_v_a.update')->where('id', '[0-9]+');
+    Route::delete('/i_v_a/{iVA}', [IVAsController::class, 'destroy'])->name('i_v_as.i_v_a.destroy')->where('id', '[0-9]+');
 
 });
+
+
+//Route::namespace('')->resource('people', PersonController::class);
+Route::get('people', [PersonController::class, 'index'])->name('people.index');
+Route::get('people/create', [PersonController::class, 'create'])->name('people.create');
+Route::post('people', [PersonController::class, 'store'])->name('people.store');
+Route::get('people/{id}/edit', [PersonController::class, 'edit'])->name('people.edit');
+Route::get('people/{id}/show', [PersonController::class, 'show'])->name('people.show');
+Route::patch('people/{id}/update', [PersonController::class, 'update'])->name('people.update');
+Route::delete('people/{id}/delete', [PersonController::class, 'destroy'])->name('people.destroy');

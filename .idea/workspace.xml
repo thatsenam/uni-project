@@ -23,21 +23,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82c81cce-17ed-40ae-a1dc-77a342b83a3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/sisir.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/posts/trash.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/metronic_starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/metronic_starter.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/laravel-code-generator/sources/resources_map.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/laravel-code-generator/sources/resources_map.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/laravel-code-generator/system/migration_tracker.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/laravel-code-generator/system/migration_tracker.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/base/_content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/base/_content.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/base/_layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/base/_layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout/default.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/default.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/test.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/test.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/sisir.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/sisir.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +174,10 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/complexity" />
       <path value="$PROJECT_DIR$/vendor/crestapps/laravel-code-generator" />
       <path value="$PROJECT_DIR$/vendor/laracasts/flash" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/infyomlabs/laravel-generator" />
+      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/vendor/infyomlabs/adminlte-templates" />
     </include_path>
   </component>
   <component name="ProjectId" id="1mmniikMBDdKI7M52KeOZ1tPfy4" />
@@ -234,7 +241,10 @@
       <workItem from="1616328176728" duration="5308000" />
       <workItem from="1616402660357" duration="1732000" />
       <workItem from="1616480457327" duration="564000" />
-      <workItem from="1616586974901" duration="2638000" />
+      <workItem from="1616586974901" duration="3434000" />
+      <workItem from="1616683542400" duration="3752000" />
+      <workItem from="1616993914527" duration="2489000" />
+      <workItem from="1617084285830" duration="1258000" />
     </task>
     <servers />
   </component>

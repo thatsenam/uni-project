@@ -27,7 +27,7 @@ class PagesController extends Controller
         $records = [2, 3, 4, 56, 6, 7, 8, 8, 8, 8];
         $records = $this->paginate($records, 2, null, ['path' => $request->url(), 'query' => $request->query()]);
 
-        return view('pages.test', compact('page_title', 'page_description', 'records'));
+        return view('pages.sisir', compact('page_title', 'page_description', 'records'));
     }
 
     public function paginate($items, $perPage = 15, $page = null, $options = [])

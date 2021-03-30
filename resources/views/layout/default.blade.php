@@ -10,9 +10,11 @@
         {{-- Meta Data --}}
         <meta name="description" content="@yield('page_description', $page_description ?? '')"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+{{--        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>--}}
 
         {{-- Favicon --}}
         <link rel="shortcut icon" href="{{ asset('media/logos/favicon.ico') }}" />
+        <link rel="stylesheet" href="{{ mix('css/app.css') }}" />
 
         {{-- Fonts --}}
         {{ Metronic::getGoogleFontsInclude() }}
@@ -61,7 +63,9 @@
         <script src="{{ asset('plugins/custom/datatables/datatables.bundle.js') }}"></script>
 
         {{-- Includable JS --}}
-        @yield('scripts')
+    <script src="{{ mix('js/app.js') }}"></script>
+
+    @yield('scripts')
 
     </body>
 </html>
