@@ -1,32 +1,30 @@
 <?php
 
+use App\Http\Controllers\AppointmentsController;
 use App\Http\Controllers\AssetCategoriesController;
+use App\Http\Controllers\BillsController;
 use App\Http\Controllers\BuySmsController;
 use App\Http\Controllers\CategoriesController;
+use App\Http\Controllers\DoctorsController;
+use App\Http\Controllers\EmployeesController;
 use App\Http\Controllers\IVAsController;
+use App\Http\Controllers\MedicinesController;
+use App\Http\Controllers\PatientsController;
 use App\Http\Controllers\PersonController;
 use App\Http\Controllers\PostsController;
+use App\Http\Controllers\RoomsController;
 use App\Http\Controllers\SmsContactsController;
 use App\Http\Controllers\SMSModelsController;
 use App\Http\Controllers\SmsTemplatesController;
+use App\Http\Controllers\SpecializesController;
 use App\Http\Controllers\StudentsController;
+use App\Http\Controllers\TestsController;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
 Route::get('/', 'PagesController@index');
 
 
-// Demo routes
 Route::get('/datatables', 'PagesController@datatables');
 Route::get('/ktdatatables', 'PagesController@ktDatatables');
 Route::get('/select2', 'PagesController@select2');
@@ -42,142 +40,155 @@ Route::get('/icons/svg', 'PagesController@svg');
 // Quick search dummy route to display html elements in search dropdown (header search)
 Route::get('/quick-search', 'PagesController@quickSearch')->name('quick-search');
 
+// php artisan resource-file:create Specialize --fields=id,name --force
+// php artisan create:resources Specialize --force --with-migration --layout-name=layout.default
 
-Route::group([
-    'prefix' => 'asset_categories',
-], function () {
 
-    Route::get('/', [AssetCategoriesController::class, 'index'])->name('asset_categories.asset_category.index');
-    Route::get('/create', [AssetCategoriesController::class, 'create'])->name('asset_categories.asset_category.create');
-    Route::get('/show/{assetCategory}', [AssetCategoriesController::class, 'show'])->name('asset_categories.asset_category.show')->where('id', '[0-9]+');
-    Route::get('/{assetCategory}/edit', [AssetCategoriesController::class, 'edit'])->name('asset_categories.asset_category.edit')->where('id', '[0-9]+');
-    Route::post('/', [AssetCategoriesController::class, 'store'])->name('asset_categories.asset_category.store');
-    Route::put('asset_category/{assetCategory}', [AssetCategoriesController::class, 'update'])->name('asset_categories.asset_category.update')->where('id', '[0-9]+');
-    Route::delete('/asset_category/{assetCategory}', [AssetCategoriesController::class, 'destroy'])->name('asset_categories.asset_category.destroy')->where('id', '[0-9]+');
+Route::group(['prefix' => 'specializes'], function () {
 
-});
-
-Route::group([
-    'prefix' => 'categories',
-], function () {
-
-    Route::get('/', [CategoriesController::class, 'index'])->name('categories.category.index');
-    Route::get('/create', [CategoriesController::class, 'create'])->name('categories.category.create');
-    Route::get('/show/{category}', [CategoriesController::class, 'show'])->name('categories.category.show')->where('id', '[0-9]+');
-    Route::get('/{category}/edit', [CategoriesController::class, 'edit'])->name('categories.category.edit')->where('id', '[0-9]+');
-    Route::post('/', [CategoriesController::class, 'store'])->name('categories.category.store');
-    Route::put('category/{category}', [CategoriesController::class, 'update'])->name('categories.category.update')->where('id', '[0-9]+');
-    Route::delete('/category/{category}', [CategoriesController::class, 'destroy'])->name('categories.category.destroy')->where('id', '[0-9]+');
+    Route::get('/', [SpecializesController::class, 'index'])->name('specializes.specialize.index');
+    Route::get('/create', [SpecializesController::class, 'create'])->name('specializes.specialize.create');
+    Route::get('/show/{specialize}', [SpecializesController::class, 'show'])->name('specializes.specialize.show')->where('id', '[0-9]+');
+    Route::get('/{specialize}/edit', [SpecializesController::class, 'edit'])->name('specializes.specialize.edit')->where('id', '[0-9]+');
+    Route::post('/', [SpecializesController::class, 'store'])->name('specializes.specialize.store');
+    Route::put('specialize/{specialize}', [SpecializesController::class, 'update'])->name('specializes.specialize.update')->where('id', '[0-9]+');
+    Route::delete('/specialize/{specialize}', [SpecializesController::class, 'destroy'])->name('specializes.specialize.destroy')->where('id', '[0-9]+');
 
 });
 
 Route::group([
-    'prefix' => 'posts',
+    'prefix' => 'doctors',
 ], function () {
 
-    Route::get('/', [PostsController::class, 'index'])->name('posts.post.index');
-    Route::get('/trash', [PostsController::class, 'trash'])->name('posts.post.trash');
-    Route::get('/create', [PostsController::class, 'create'])->name('posts.post.create');
-    Route::get('/show/{post}', [PostsController::class, 'show'])->name('posts.post.show')->where('id', '[0-9]+');
-    Route::get('/{post}/edit', [PostsController::class, 'edit'])->name('posts.post.edit')->where('id', '[0-9]+');
-    Route::post('/', [PostsController::class, 'store'])->name('posts.post.store');
-    Route::put('post/{post}', [PostsController::class, 'update'])->name('posts.post.update')->where('id', '[0-9]+');
-    Route::delete('/post/{post}', [PostsController::class, 'destroy'])->name('posts.post.destroy')->where('id', '[0-9]+');
-    Route::post('/post/{post}', [PostsController::class, 'restore'])->name('posts.post.restore')->where('id', '[0-9]+');
+    Route::get('/', [DoctorsController::class, 'index'])->name('doctors.doctor.index');
+    Route::get('/create', [DoctorsController::class, 'create'])->name('doctors.doctor.create');
+    Route::get('/show/{doctor}', [DoctorsController::class, 'show'])->name('doctors.doctor.show')->where('id', '[0-9]+');
+    Route::get('/{doctor}/edit', [DoctorsController::class, 'edit'])->name('doctors.doctor.edit')->where('id', '[0-9]+');
+    Route::post('/', [DoctorsController::class, 'store'])->name('doctors.doctor.store');
+    Route::put('doctor/{doctor}', [DoctorsController::class, 'update'])->name('doctors.doctor.update')->where('id', '[0-9]+');
+    Route::delete('/doctor/{doctor}', [DoctorsController::class, 'destroy'])->name('doctors.doctor.destroy')->where('id', '[0-9]+');
 
 });
+
+// php artisan resource-file:create Patient --fields=id,name,age,gender,phone,address,photo --force
+// php artisan create:resources Patient --force --with-migration --layout-name=layout.default
 
 Route::group([
-    'prefix' => 'sms_templates',
+    'prefix' => 'patients',
 ], function () {
-
-    Route::get('/', [SmsTemplatesController::class, 'index'])->name('sms_templates.sms_template.index');
-    Route::get('/create', [SmsTemplatesController::class, 'create'])->name('sms_templates.sms_template.create');
-    Route::get('/show/{smsTemplate}', [SmsTemplatesController::class, 'show'])->name('sms_templates.sms_template.show')->where('id', '[0-9]+');
-    Route::get('/{smsTemplate}/edit', [SmsTemplatesController::class, 'edit'])->name('sms_templates.sms_template.edit')->where('id', '[0-9]+');
-    Route::post('/', [SmsTemplatesController::class, 'store'])->name('sms_templates.sms_template.store');
-    Route::put('sms_template/{smsTemplate}', [SmsTemplatesController::class, 'update'])->name('sms_templates.sms_template.update')->where('id', '[0-9]+');
-    Route::delete('/sms_template/{smsTemplate}', [SmsTemplatesController::class, 'destroy'])->name('sms_templates.sms_template.destroy')->where('id', '[0-9]+');
+    Route::get('/', [PatientsController::class, 'index'])->name('patients.patient.index');
+    Route::get('/create', [PatientsController::class, 'create'])->name('patients.patient.create');
+    Route::get('/show/{patient}', [PatientsController::class, 'show'])->name('patients.patient.show')->where('id', '[0-9]+');
+    Route::get('/{patient}/edit', [PatientsController::class, 'edit'])->name('patients.patient.edit')->where('id', '[0-9]+');
+    Route::post('/', [PatientsController::class, 'store'])->name('patients.patient.store');
+    Route::put('patient/{patient}', [PatientsController::class, 'update'])->name('patients.patient.update')->where('id', '[0-9]+');
+    Route::delete('/patient/{patient}', [PatientsController::class, 'destroy'])->name('patients.patient.destroy')->where('id', '[0-9]+');
 
 });
 
+
+// php artisan resource-file:create Room --fields=id,name,room_type,bed_count,room_size,is_air_conditioned,description,charge --force
+// php artisan create:resources Room --force --with-migration --layout-name=layout.default
 
 Route::group([
-    'prefix' => 'sms_contacts',
+    'prefix' => 'rooms',
 ], function () {
-    Route::get('/', [SmsContactsController::class, 'index'])->name('sms_contacts.sms_contact.index');
-    Route::get('/create', [SmsContactsController::class, 'create'])->name('sms_contacts.sms_contact.create');
-    Route::get('/show/{smsContact}', [SmsContactsController::class, 'show'])->name('sms_contacts.sms_contact.show')->where('id', '[0-9]+');
-    Route::get('/{smsContact}/edit', [SmsContactsController::class, 'edit'])->name('sms_contacts.sms_contact.edit')->where('id', '[0-9]+');
-    Route::post('/', [SmsContactsController::class, 'store'])->name('sms_contacts.sms_contact.store');
-    Route::put('sms_contact/{smsContact}', [SmsContactsController::class, 'update'])->name('sms_contacts.sms_contact.update')->where('id', '[0-9]+');
-    Route::delete('/sms_contact/{smsContact}', [SmsContactsController::class, 'destroy'])->name('sms_contacts.sms_contact.destroy')->where('id', '[0-9]+');
+
+    Route::get('/', [RoomsController::class, 'index'])->name('rooms.room.index');
+    Route::get('/create', [RoomsController::class, 'create'])->name('rooms.room.create');
+    Route::get('/show/{room}', [RoomsController::class, 'show'])->name('rooms.room.show')->where('id', '[0-9]+');
+    Route::get('/{room}/edit', [RoomsController::class, 'edit'])->name('rooms.room.edit')->where('id', '[0-9]+');
+    Route::post('/', [RoomsController::class, 'store'])->name('rooms.room.store');
+    Route::put('room/{room}', [RoomsController::class, 'update'])->name('rooms.room.update')->where('id', '[0-9]+');
+    Route::delete('/room/{room}', [RoomsController::class, 'destroy'])->name('rooms.room.destroy')->where('id', '[0-9]+');
 
 });
 
-Route::group([
-    'prefix' => 's_m_s_models',
-], function () {
-
-    Route::get('/', [SMSModelsController::class, 'index'])->name('s_m_s_models.s_m_s_model.index');
-    Route::get('/create', [SMSModelsController::class, 'create'])->name('s_m_s_models.s_m_s_model.create');
-    Route::get('/show/{sMSModel}', [SMSModelsController::class, 'show'])->name('s_m_s_models.s_m_s_model.show')->where('id', '[0-9]+');
-    Route::get('/{sMSModel}/edit', [SMSModelsController::class, 'edit'])->name('s_m_s_models.s_m_s_model.edit')->where('id', '[0-9]+');
-    Route::post('/', [SMSModelsController::class, 'store'])->name('s_m_s_models.s_m_s_model.store');
-    Route::put('s_m_s_model/{sMSModel}', [SMSModelsController::class, 'update'])->name('s_m_s_models.s_m_s_model.update')->where('id', '[0-9]+');
-    Route::delete('/s_m_s_model/{sMSModel}', [SMSModelsController::class, 'destroy'])->name('s_m_s_models.s_m_s_model.destroy')->where('id', '[0-9]+');
-
-});
-
-Route::group([
-    'prefix' => 'buy_sms',
-], function () {
-
-    Route::get('/', [BuySmsController::class, 'index'])->name('buy_sms.buy_sms.index');
-    Route::get('/create', [BuySmsController::class, 'create'])->name('buy_sms.buy_sms.create');
-    Route::get('/show/{buySms}', [BuySmsController::class, 'show'])->name('buy_sms.buy_sms.show')->where('id', '[0-9]+');
-    Route::get('/{buySms}/edit', [BuySmsController::class, 'edit'])->name('buy_sms.buy_sms.edit')->where('id', '[0-9]+');
-    Route::post('/', [BuySmsController::class, 'store'])->name('buy_sms.buy_sms.store');
-    Route::put('buy_sms/{buySms}', [BuySmsController::class, 'update'])->name('buy_sms.buy_sms.update')->where('id', '[0-9]+');
-    Route::delete('/buy_sms/{buySms}', [BuySmsController::class, 'destroy'])->name('buy_sms.buy_sms.destroy')->where('id', '[0-9]+');
-
-});
+// php artisan resource-file:create Bill --fields=id,bill_no,room_id,patient_id,doctor_charge,room_charge,total_charge,doctor_id,bill_by,date,notes --force
+// php artisan create:resources Bill --force --with-migration --layout-name=layout.default
 
 
 Route::group([
-    'prefix' => 'students',
+    'prefix' => 'bills',
 ], function () {
 
-    Route::get('/', [StudentsController::class, 'index'])->name('students.student.index');
-    Route::get('/create', [StudentsController::class, 'create'])->name('students.student.create');
-    Route::get('/show/{student}', [StudentsController::class, 'show'])->name('students.student.show')->where('id', '[0-9]+');
-    Route::get('/{student}/edit', [StudentsController::class, 'edit'])->name('students.student.edit')->where('id', '[0-9]+');
-    Route::post('/', [StudentsController::class, 'store'])->name('students.student.store');
-    Route::put('student/{student}', [StudentsController::class, 'update'])->name('students.student.update')->where('id', '[0-9]+');
-    Route::delete('/student/{student}', [StudentsController::class, 'destroy'])->name('students.student.destroy')->where('id', '[0-9]+');
+    Route::get('/', [BillsController::class, 'index'])->name('bills.bill.index');
+    Route::get('/create', [BillsController::class, 'create'])->name('bills.bill.create');
+    Route::get('/show/{bill}', [BillsController::class, 'show'])->name('bills.bill.show')->where('id', '[0-9]+');
+    Route::get('/{bill}/edit', [BillsController::class, 'edit'])->name('bills.bill.edit')->where('id', '[0-9]+');
+    Route::post('/', [BillsController::class, 'store'])->name('bills.bill.store');
+    Route::put('bill/{bill}', [BillsController::class, 'update'])->name('bills.bill.update')->where('id', '[0-9]+');
+    Route::delete('/bill/{bill}', [BillsController::class, 'destroy'])->name('bills.bill.destroy')->where('id', '[0-9]+');
 
 });
+
+
+// php artisan resource-file:create Medicine --fields=id,name,price --force
+// php artisan create:resources Medicine --force --with-migration --layout-name=layout.default
 
 Route::group([
-    'prefix' => 'i_v_as',
+    'prefix' => 'medicines',
 ], function () {
 
-    Route::get('/', [IVAsController::class, 'index'])->name('i_v_as.i_v_a.index');
-    Route::get('/create', [IVAsController::class, 'create'])->name('i_v_as.i_v_a.create');
-    Route::get('/show/{iVA}', [IVAsController::class, 'show'])->name('i_v_as.i_v_a.show')->where('id', '[0-9]+');
-    Route::get('/{iVA}/edit', [IVAsController::class, 'edit'])->name('i_v_as.i_v_a.edit')->where('id', '[0-9]+');
-    Route::post('/', [IVAsController::class, 'store'])->name('i_v_as.i_v_a.store');
-    Route::put('i_v_a/{iVA}', [IVAsController::class, 'update'])->name('i_v_as.i_v_a.update')->where('id', '[0-9]+');
-    Route::delete('/i_v_a/{iVA}', [IVAsController::class, 'destroy'])->name('i_v_as.i_v_a.destroy')->where('id', '[0-9]+');
+    Route::get('/', [MedicinesController::class, 'index'])->name('medicines.medicine.index');
+    Route::get('/create', [MedicinesController::class, 'create'])->name('medicines.medicine.create');
+    Route::get('/show/{medicine}', [MedicinesController::class, 'show'])->name('medicines.medicine.show')->where('id', '[0-9]+');
+    Route::get('/{medicine}/edit', [MedicinesController::class, 'edit'])->name('medicines.medicine.edit')->where('id', '[0-9]+');
+    Route::post('/', [MedicinesController::class, 'store'])->name('medicines.medicine.store');
+    Route::put('medicine/{medicine}', [MedicinesController::class, 'update'])->name('medicines.medicine.update')->where('id', '[0-9]+');
+    Route::delete('/medicine/{medicine}', [MedicinesController::class, 'destroy'])->name('medicines.medicine.destroy')->where('id', '[0-9]+');
+
+});
+
+// php artisan resource-file:create Employee --fields=id,eid,name,phone,salary,address,gender,nid --force
+// php artisan create:resources Employee --force --with-migration --layout-name=layout.default
+
+Route::group([
+    'prefix' => 'employees',
+], function () {
+
+    Route::get('/', [EmployeesController::class, 'index'])->name('employees.employee.index');
+    Route::get('/create', [EmployeesController::class, 'create'])->name('employees.employee.create');
+    Route::get('/show/{employee}', [EmployeesController::class, 'show'])->name('employees.employee.show')->where('id', '[0-9]+');
+    Route::get('/{employee}/edit', [EmployeesController::class, 'edit'])->name('employees.employee.edit')->where('id', '[0-9]+');
+    Route::post('/', [EmployeesController::class, 'store'])->name('employees.employee.store');
+    Route::put('employee/{employee}', [EmployeesController::class, 'update'])->name('employees.employee.update')->where('id', '[0-9]+');
+    Route::delete('/employee/{employee}', [EmployeesController::class, 'destroy'])->name('employees.employee.destroy')->where('id', '[0-9]+');
 
 });
 
 
-//Route::namespace('')->resource('people', PersonController::class);
-Route::get('people', [PersonController::class, 'index'])->name('people.index');
-Route::get('people/create', [PersonController::class, 'create'])->name('people.create');
-Route::post('people', [PersonController::class, 'store'])->name('people.store');
-Route::get('people/{id}/edit', [PersonController::class, 'edit'])->name('people.edit');
-Route::get('people/{id}/show', [PersonController::class, 'show'])->name('people.show');
-Route::patch('people/{id}/update', [PersonController::class, 'update'])->name('people.update');
-Route::delete('people/{id}/delete', [PersonController::class, 'destroy'])->name('people.destroy');
+// php artisan resource-file:create Appointment --fields=id,doctor_id,patient_id,phone,appointment_date,charge,note --force
+// php artisan create:resources Appointment --force --with-migration --layout-name=layout.default
+
+Route::group([
+    'prefix' => 'appointments',
+], function () {
+
+    Route::get('/', [AppointmentsController::class, 'index'])->name('appointments.appointment.index');
+    Route::get('/create', [AppointmentsController::class, 'create'])->name('appointments.appointment.create');
+    Route::get('/show/{appointment}', [AppointmentsController::class, 'show'])->name('appointments.appointment.show')->where('id', '[0-9]+');
+    Route::get('/{appointment}/edit', [AppointmentsController::class, 'edit'])->name('appointments.appointment.edit')->where('id', '[0-9]+');
+    Route::post('/', [AppointmentsController::class, 'store'])->name('appointments.appointment.store');
+    Route::put('appointment/{appointment}', [AppointmentsController::class, 'update'])->name('appointments.appointment.update')->where('id', '[0-9]+');
+    Route::delete('/appointment/{appointment}', [AppointmentsController::class, 'destroy'])->name('appointments.appointment.destroy')->where('id', '[0-9]+');
+
+});
+
+// php artisan resource-file:create Test --fields=id,test_name,patient_id,doctor_id,bill_id,test_date,test_charge,test_result --force
+// php artisan create:resources Test --force --with-migration --layout-name=layout.default
+
+
+Route::group([
+    'prefix' => 'tests',
+], function () {
+
+    Route::get('/', [TestsController::class, 'index'])->name('tests.test.index');
+    Route::get('/create', [TestsController::class, 'create'])->name('tests.test.create');
+    Route::get('/show/{test}', [TestsController::class, 'show'])->name('tests.test.show')->where('id', '[0-9]+');
+    Route::get('/{test}/edit', [TestsController::class, 'edit'])->name('tests.test.edit')->where('id', '[0-9]+');
+    Route::post('/', [TestsController::class, 'store'])->name('tests.test.store');
+    Route::put('test/{test}', [TestsController::class, 'update'])->name('tests.test.update')->where('id', '[0-9]+');
+    Route::delete('/test/{test}', [TestsController::class, 'destroy'])->name('tests.test.destroy')->where('id', '[0-9]+');
+
+});

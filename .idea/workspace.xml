@@ -3,51 +3,124 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="82c81cce-17ed-40ae-a1dc-77a342b83a3c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/metronic_starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/metronic_starter.iml" afterDir="false" />
+    <list default="true" id="ce878d57-d188-4719-8aa7-d6590d0741a8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AssetCategoriesController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BuySmsController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IVAsController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PersonController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SMSModelsController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SmsContactsController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SmsTemplatesController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StudentsController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/AssetCategory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Attribute.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/BuySms.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/IVA.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Person.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/SMSModel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/SmsContact.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/SmsTemplate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Student.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/menu_aside.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/menu_aside.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/menu_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/menu_header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_23_172416_create_asset_categories_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_25_065548_create_categories_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_09_145959_create_posts_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_09_150158_add_soft_deletes_to_posts_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_10_092919_create_sms_templates_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_10_094532_create_sms_contacts_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_11_071214_create_s_m_s_models_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_13_180829_create_buy_sms_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_18_070614_create_students_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_22_084533_create_i_v_as_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_29_051130_create_attributes_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_30_061120_create_people_table.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/laravel-code-generator/sources/resources_map.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/laravel-code-generator/sources/resources_map.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/laravel-code-generator/system/migration_tracker.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/laravel-code-generator/system/migration_tracker.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/default.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/default.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/sisir.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/sisir.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/asset_categories/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/asset_categories/edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/asset_categories/form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/asset_categories/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/asset_categories/show.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/attributes/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/attributes/edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/attributes/form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/attributes/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/attributes/show.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/buy_sms/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/buy_sms/edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/buy_sms/form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/buy_sms/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/buy_sms/show.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/categories/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/categories/edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/categories/form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/categories/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/categories/show.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/i_v_as/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/i_v_as/edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/i_v_as/form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/i_v_as/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/i_v_as/show.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/base/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/base/_footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/base/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/base/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/base/_layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/base/_layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/partials/extras/_topbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/partials/extras/_topbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/people/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/people/edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/people/fields.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/people/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/people/show.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/people/show_fields.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/people/table.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/show.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/trash.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/s_m_s_models/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/s_m_s_models/edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/s_m_s_models/form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/s_m_s_models/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/s_m_s_models/show.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sms_contacts/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sms_contacts/edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sms_contacts/form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sms_contacts/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sms_contacts/show.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sms_templates/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sms_templates/edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sms_templates/form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sms_templates/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sms_templates/show.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/students/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/students/edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/students/form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/students/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/students/show.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/flash/message.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/flash/modal.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -61,9 +134,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/resources/views/pages/test.blade.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -178,9 +248,17 @@
       <path value="$PROJECT_DIR$/vendor/infyomlabs/laravel-generator" />
       <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
       <path value="$PROJECT_DIR$/vendor/infyomlabs/adminlte-templates" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/vendor/beyondcode/laravel-er-diagram-generator" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/graphviz" />
     </include_path>
   </component>
-  <component name="ProjectId" id="1mmniikMBDdKI7M52KeOZ1tPfy4" />
+  <component name="ProjectId" id="1upyMnkXKx1cgxo7y81IulKNYp2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -189,70 +267,31 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/posts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/posts" />
-      <recent name="$PROJECT_DIR$/resources/laravel-code-generator/templates/default-collective" />
-      <recent name="$PROJECT_DIR$/resources/laravel-code-generator/templates/default" />
-      <recent name="$PROJECT_DIR$/resources/laravel-code-generator/templates" />
       <recent name="$PROJECT_DIR$" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner scope="XML" />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="82c81cce-17ed-40ae-a1dc-77a342b83a3c" name="Default Changelist" comment="" />
-      <created>1610107784564</created>
+      <changelist id="ce878d57-d188-4719-8aa7-d6590d0741a8" name="Default Changelist" comment="" />
+      <created>1625376782314</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1610107784564</updated>
-      <workItem from="1610107785588" duration="4119000" />
-      <workItem from="1610638875602" duration="1953000" />
-      <workItem from="1610647618454" duration="11000" />
-      <workItem from="1610795259231" duration="1840000" />
-      <workItem from="1610810513059" duration="12000" />
-      <workItem from="1610810689387" duration="803000" />
-      <workItem from="1610863173413" duration="881000" />
-      <workItem from="1611219642673" duration="330000" />
-      <workItem from="1614097175972" duration="8149000" />
-      <workItem from="1614233958302" duration="5809000" />
-      <workItem from="1614258284463" duration="187000" />
-      <workItem from="1614358002510" duration="3164000" />
-      <workItem from="1614600763038" duration="832000" />
-      <workItem from="1615301960539" duration="3503000" />
-      <workItem from="1615368335651" duration="2905000" />
-      <workItem from="1615445946124" duration="1787000" />
-      <workItem from="1615658690911" duration="1159000" />
-      <workItem from="1615706466583" duration="303000" />
-      <workItem from="1615706857057" duration="65000" />
-      <workItem from="1615978652137" duration="1083000" />
-      <workItem from="1616050896323" duration="917000" />
-      <workItem from="1616328176728" duration="5308000" />
-      <workItem from="1616402660357" duration="1732000" />
-      <workItem from="1616480457327" duration="564000" />
-      <workItem from="1616586974901" duration="3434000" />
-      <workItem from="1616683542400" duration="3752000" />
-      <workItem from="1616993914527" duration="2489000" />
-      <workItem from="1617084285830" duration="1258000" />
+      <updated>1625376782314</updated>
+      <workItem from="1625376783924" duration="3649000" />
+      <workItem from="1625394049430" duration="401000" />
+      <workItem from="1625753078834" duration="3872000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -265,9 +304,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>

@@ -9,14 +9,10 @@
     <div class="row ">
         <div class="col">
             <div class="card">
-                <a class="card-body" href="{{ route('categories.category.index') }}">Categories</a>
+                <a class="card-body" href="{{ route('doctors.doctor.index') }}">Doctors</a>
             </div>
         </div>
-        <div class="col">
-            <div class="card">
-                <a class="card-body" href="{{ route('asset_categories.asset_category.index') }}">Asset Categories</a>
-            </div>
-        </div>
+
     </div>
 
 

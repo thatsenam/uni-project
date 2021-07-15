@@ -21,6 +21,7 @@
         "laravelcollective/html": "^6.2"
     },
     "require-dev": {
+        "beyondcode/laravel-er-diagram-generator": "^1.5",
         "crestapps/laravel-code-generator": "^2.4",
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",

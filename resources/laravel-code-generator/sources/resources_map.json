@@ -34,5 +34,41 @@
     {
         "model-name": "Attribute",
         "resource-file": "attributes.json"
+    },
+    {
+        "model-name": "Specialize",
+        "resource-file": "specializes.json"
+    },
+    {
+        "model-name": "Doctor",
+        "resource-file": "doctors.json"
+    },
+    {
+        "model-name": "Patient",
+        "resource-file": "patients.json"
+    },
+    {
+        "model-name": "Room",
+        "resource-file": "rooms.json"
+    },
+    {
+        "model-name": "Bill",
+        "resource-file": "bills.json"
+    },
+    {
+        "model-name": "Medicine",
+        "resource-file": "medicines.json"
+    },
+    {
+        "model-name": "Employee",
+        "resource-file": "employees.json"
+    },
+    {
+        "model-name": "Appointment",
+        "resource-file": "appointments.json"
+    },
+    {
+        "model-name": "Test",
+        "resource-file": "tests.json"
     }
 ]
